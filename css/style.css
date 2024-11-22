@@ -206,7 +206,7 @@ a {
       color: #bac964 !important; }
 
 .site-hero {
-  
+  background-color: #ccc;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -415,7 +415,8 @@ a {
     .single-portfolio .p-inner h4 {
       font-size: 20px; }
     .single-portfolio .p-inner .cat {
-      font-size: 12px;
+      font-size: 100px;
+      font-weight: bold ;
       text-transform: uppercase;
       color: #cccccc; }
 
@@ -496,7 +497,7 @@ a {
   text-align: center; }
 
 .portfolio-area .filters-content .item .p-inner .cat {
-  font-size: 13px; }
+  font-size: 113px; }
 
 .portfolio-area .filters-content .item img {
   width: 100%; }
