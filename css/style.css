@@ -211,10 +211,12 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto;
+ }
   .site-hero, .site-hero .row {
-    height: 100vh;
-    min-height: 800px; }
+    height: 90vh;
+    min-height: 400px; }
   .site-hero:before {
     content: "";
     position: absolute;
@@ -566,6 +568,59 @@ a {
       -o-transition: none;
       transition: none; } }
 
+/* About Me Section Image Styling */
+.aboutimg img {
+  width: 60%; /* Allow the image to fill its container */
+  max-width: 400px; /* Restrict the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure proper alignment */
+  padding-right: 0%;
+  margin-top: 0%;
+}
+
+/* About Me Section Styling */
+#section-about .aboutimg {
+  margin-bottom: 0; /* Remove bottom margin for tighter spacing */
+  padding-right: 0px; /* Reduce space on the right side of the image */
+}
+
+#section-about .abouttext {
+  padding-left: 0px; /* Reduce space on the left side of the text */
+}
+
+#section-about .aboutimg img {
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners for aesthetic */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+/* Remove Gutter Between Columns for More Compact Layout */
+#section-about .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#section-about .col-lg-7,
+#section-about .col-lg-5 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Mobile-First Responsive Adjustments */
+@media (max-width: 768px) {
+  #section-about .aboutimg {
+    padding-right: 0; /* Remove padding for smaller screens */
+  }
+  #section-about .col-lg-5 {
+    padding-left: 0; /* Remove padding for smaller screens */
+  }
+}
+
+
 .resume-item {
   padding: 30px;
   background: #333;
@@ -664,13 +719,17 @@ a {
     display: block; }
 
 .site-footer {
-  padding: 3em 0; }
+  padding: 3em 0;
+   
+  
+}
   .site-footer p:last-child {
     margin-bottom: 0; }
   .site-footer .social-item {
+    padding-left: 0;
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #333;
     position: relative;
     border-radius: 50%;
