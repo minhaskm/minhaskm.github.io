@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas - Portfolio</title>
+    <title>Minhas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Add Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="images/M.png" />
+    
     <style>
         * {
             margin: 0;
@@ -57,12 +58,14 @@
         .social-icons {
             display: flex;
             gap: 20px;
+            align-items: center;
         }
 
         .social-icons a {
             color: #333;
             font-size: 24px;
             transition: color 0.3s;
+            
         }
 
         .social-icons a:hover {
@@ -98,11 +101,12 @@
         }
 
         .resume-btn {
-        padding: 12px 30px;
-        font-size: 1.2em;
-        color: white;
+        padding: 10px 30px;
+        font-weight: 500;
+            font-size: 18px;
+        color: rgb(0, 0, 0);
         background: transparent;
-        border: 1px solid white;
+        border: 1px solid rgb(0, 0, 0);
         border-radius: 5px;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -110,7 +114,7 @@
     }
 
     .resume-btn:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: #d1d3fff1;
     }
 
         /* Rest of the styles remain the same */
@@ -221,6 +225,49 @@
             color: #333;
         }
 
+
+        #photography {
+  background-color: black;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+.photography-content {
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .photography-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .photography-content p {
+            font-weight: 200;
+            font-size: 1.5em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .photo {
+  width: 40vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.photo[data-status="inactive"] {
+  display: none;
+}
+
+.photo[data-status="active"] {
+  display: block;
+}
+
+
+
+
+
         @media (max-width: 1200px) {
             .portfolio-grid {
                 grid-template-columns: repeat(3, 1fr);
@@ -268,9 +315,14 @@
                 <a href="#hero">Home</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
+                
+                
             </div>
             <div class="social-icons">
-                <a href="https://www.behance.net/minhasmohammed" target="_blank" title="Instagram">
+                <a href="https://drive.google.com/file/d/1ekWa6DHoFK2XOICDmBVZedrRBQEHa_RT/view?usp=sharing" target="_blank" title="This will take you to my resume" >
+                    <button class="resume-btn">Resume</button>
+                    </a>
+                <a href="https://www.behance.net/minhasmohammed" target="_blank" title="Behance">
                     <i class="fab fa-behance"></i>
                 </a>
                 <a href="https://www.instagram.com/minhaskm/" target="_blank" title="Instagram">
@@ -285,7 +337,7 @@
 
     <section id="hero" style="background-image: url(images/tunnel2.jpg);">
         <div class="hero-content" >
-            <h1>MiNHAS</h1>
+            <h1>Minhas</h1>
             <p>Blending design with a filmmaker's heart</p>
             <a href="https://drive.google.com/file/d/1ekWa6DHoFK2XOICDmBVZedrRBQEHa_RT/view?usp=sharing" target="_blank" title="This will take you to my resume" >
             <button class="resume-btn">Resume</button>
@@ -293,7 +345,7 @@
         </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" >
         <h2>Portfolio</h2>
         <div class="portfolio-grid">
             <!-- Project 1 -->
@@ -419,6 +471,46 @@
         </div>
     </section>
 
+    <section id="photography" style="background-color:rgb(84, 84, 84) ;">
+        
+            <p>Blending design with a filmmaker's heart</p>
+            
+<img class="photo" data-index="0" data-status="inactive" src="photos/1.jpg" />
+<img class="photo" data-index="1" data-status="inactive" src="photos/2.jpg" />
+<img class="photo" data-index="2" data-status="inactive" src="photos/3.jpg" />
+<img class="photo" data-index="3" data-status="inactive" src="photos/4.JPG" />
+<img class="photo" data-index="4" data-status="inactive" src="photos/5.png" />
+<img class="photo" data-index="5" data-status="inactive" src="photos/6.jpg" />
+<img class="photo" data-index="6" data-status="inactive" src="photos/7.jpg" />
+<img class="photo" data-index="7" data-status="inactive" src="photos/8.jpg" />
+<img class="photo" data-index="8" data-status="inactive" src="photos/9.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/10.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/11.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/12.png" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/13.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/14.jpg" />
+
+<img class="photo" data-index="9" data-status="inactive" src="photos/16.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/17.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/18.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/19.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/20.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/21.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/22.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/23.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/24.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/25.jpg" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/26.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/27.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/28.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/29.JPG" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/30.png" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/31.png" />
+<img class="photo" data-index="9" data-status="inactive" src="photos/32.jpg" />
+
+        
+    </section>
+
     <section id="contact">
         <h2>Reach out</h2>
         <div class="contact-form">
@@ -453,6 +545,43 @@
                 });
             });
         });
+
+        const photo = document.getElementsByClassName("photo");
+
+let globalIndex = 0,
+    last = { x: 0, y: 0 };
+
+const activate = (image, x, y) => {
+  image.style.left = `${x}px`;
+  image.style.top = `${y}px`;
+  image.style.zIndex = globalIndex;
+
+  image.dataset.status = "active";
+
+  last = { x, y };
+}
+
+const distanceFromLast = (x, y) => {
+  return Math.hypot(x - last.x, y - last.y);
+}
+
+const handleOnMove = e => {
+  if(distanceFromLast(e.clientX, e.clientY) > (window.innerWidth / 20)) {
+    const lead = photo[globalIndex % photo.length],
+          tail = photo[(globalIndex - 5) % photo.length];
+
+    activate(lead, e.clientX, e.clientY);
+
+    if(tail) tail.dataset.status = "inactive";
+    
+    globalIndex++;
+  }
+}
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
+
     </script>
 </body>
 </html>
