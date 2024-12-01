@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vyuna Project - Minhas</title>
+    <title>Akkarakkunnu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
             z-index: 1000;
             background: rgba(18, 18, 18, 0.9);
             padding: 15px;
-            
+            border-radius: 50%;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
@@ -54,6 +54,44 @@
             margin: 20px 0;
             display: block;
         }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 40px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Added styles for better spacing */
+        .content-section {
+            margin: 40px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        .video-container::before {
+            content: "Loading video...";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            z-index: -1;
+        }
+
     </style>
 </head>
 <body>
@@ -62,13 +100,32 @@
     </a>
 
     <div class="project-container">
-        <!-- Add your Vyuna project images here -->
-        <img src="akkarakkunnu/1.png" alt="Akkarakkunnu" class="project-image">
-        <img src="akkarakkunnu/2.png" alt="Akkarakkunnu" class="project-image">
-        <img src="akkarakkunnu/5.png" alt="Akkarakkunnu" class="project-image">
-        <img src="akkarakkunnu/3.png" alt="Akkarakkunnu" class="project-image">
-        <img src="akkarakkunnu/4.png" alt="Akkarakkunnu" class="project-image">
-        <!-- Add more images as needed -->
+        <!-- Hero Image -->
+        <img src="akkarakkunnu/1.png" alt="Vyuna Project Hero" class="hero-image">
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <!-- Replace the src with your YouTube/Vimeo embed URL -->
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/xr-YHt4MaBM?si=C9qL16Ha1-M4tY_p" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+
+        <!-- Project Documentation Images -->
+        <div class="content-section">
+            
+            <img src="akkarakkunnu/2.png" alt="Akkarakkunnu" class="project-image">
+            <img src="akkarakkunnu/5.png" alt="Akkarakkunnu" class="project-image">
+            <img src="akkarakkunnu/3.png" alt="Akkarakkunnu" class="project-image">
+            <img src="akkarakkunnu/4.png" alt="Akkarakkunnu" class="project-image">
+            <!-- Add more images as needed -->
+        </div>
     </div>
 </body>
 </html>
+
+
+<!-- Add your Vyuna project images here -->
