@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazkar Kamran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'League Spartan', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(18, 18, 18, 0.9);
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+
+        .back-button i {
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        .project-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            display: block;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 40px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Added styles for better spacing */
+        .content-section {
+            margin: 40px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        .video-container::before {
+            content: "Loading video...";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div class="project-container">
+        
+
+        <!-- Project Documentation Images -->
+        <div class="content-section">
+            
+            <img src="mazhar Kamran/Slice 1.png" alt="Mazhar" class="project-image">
+            <a href="https://www.instagram.com/mazhar_kamran?igsh=MTIzaDMxM24zODdjZg==" target="_blank"  title="View Instagram"> <img src="mazhar Kamran/Slice 2.png" alt="Mazhar" class="project-image"></a>
+            <img src="mazhar Kamran/Slice 3.png" alt="Mazhar" class="project-image">
+            <a href="https://www.youtube.com/@cinemaz-rubaru" target="_blank" title="View YouTube"> <img src="mazhar Kamran/Slice 4.png" alt="Mazhar" class="project-image"> </a>
+            <img src="mazhar Kamran/Slice 5.png" alt="Mazhar" class="project-image">
+
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- Add your Vyuna project images here -->
